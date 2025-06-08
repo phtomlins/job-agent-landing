@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI Job Search Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .hero {
+            background: #0779e4;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+        .cta {
+            margin-top: 20px;
+        }
+        .cta a {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .feature {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            flex: 1 1 30%;
+        }
+        .feature h3 {
+            font-size: 24px;
+        }
+        .waitlist {
+            background: #333;
+            color: #fff;
+            padding: 50px 0;
+        }
+        .waitlist form {
+            max-width: 600px;
+            margin: auto;
+        }
+        .waitlist input[type="email"] {
+            padding: 10px;
+            width: 80%;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .waitlist input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #0779e4;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Agentic AI Job Search Assistant</h1>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Let AI Apply to Jobs for You</h1>
+            <p>An autonomous job search assistant that finds roles, tailors your CV, and applies — while you focus on interviews.</p>
+            <div class="cta">
+                <a href="#waitlist">Join the Waitlist</a>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2>Job Hunting is Broken</h2>
+            <p>Spending hours scrolling job boards, rewriting cover letters, and filling out forms? Let our AI agent do the heavy lifting — from job discovery to application submission.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p>Set your preferences, upload your CV, and let our AI find jobs, tailor your application, and apply. Track progress in your dashboard.</p>
+        </div>
+    </section>
+    <section class="section features">
+        <div class="container">
+            <h2>Built for Busy Professionals</h2>
+            <div class="feature">
+                <h3>Fully Automated Applications</h3>
+                <p>Our AI agent applies to jobs on your behalf, saving you time and effort.</p>
+            </div>
+            <div class="feature">
+                <h3>Personalized CV and Cover Letters</h3>
+                <p>Tailored applications that match job descriptions using advanced AI.</p>
+            </div>
+            <div class="feature">
+                <h3>Multi-Platform Support</h3>
+                <p>Works across LinkedIn, Indeed, Wellfound, and more.</p>
+            </div>
+            <div class="feature">
+                <h3>Application Tracking Dashboard</h3>
+                <p>Monitor your job applications and responses in one place.</p>
+            </div>
+            <div class="feature">
+                <h3>Privacy-First</h3>
+                <p>Your data stays secure and private.</p>
+            </div>
+        </div>
+    </section>
+    <section class="waitlist" id="waitlist">
+        <div class="container">
+            <h2>Be the First to Try It</h2>
+            <p>Join the waitlist and get early access + exclusive launch perks.</p>
+            <form action="https://formspree.io/f/{your_form_id}" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" value="Join the Waitlist">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
