@@ -4,93 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climbr - Let AI Apply to Jobs for You</title>
+    <title>Climbr - Your AI Job Search Assistant</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f4f4f9;
             color: #333;
         }
         header {
-            background-color: #0073e6;
+            background-color: #0077b6;
             color: white;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
         header img {
-            float: left;
-            margin-right: 20px;
+            width: 150px;
         }
         .container {
-            padding: 20px;
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
         }
-        h1, h2, h3 {
-            color: #0073e6;
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
         }
-        .cta-button {
-            background-color: #0073e6;
-            color: white;
-            padding: 10px 20px;
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .hero {
             text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 5px;
+            padding: 50px 0;
         }
-        .cta-button:hover {
-            background-color: #005bb5;
+        .hero h1 {
+            color: #0077b6;
         }
-        .features {
+        .features, .how-it-works, .cta {
+            background-color: white;
+            padding: 40px 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .features h2, .how-it-works h2, .cta h2 {
+            color: #0077b6;
+            margin-bottom: 20px;
+        }
+        .features ul, .how-it-works ul {
             list-style-type: none;
             padding: 0;
         }
-        .features li {
-            background-color: #e6f2ff;
-            margin: 10px 0;
-            padding: 10px;
+        .features li, .how-it-works li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .cta {
+            text-align: center;
+        }
+        .cta button {
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
             border-radius: 5px;
+            cursor: pointer;
+        }
+        .cta button:hover {
+            background-color: #005f8a;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #0077b6;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="climbr_logo.png" alt="Climbr Logo" width="50" height="50">
-        <h1>Climbr</h1>
-        <p>Let AI Apply to Jobs for You</p>
+        <img src="climbr_logo.png" alt="Climbr Logo">
     </header>
     <div class="container">
-        <section>
-            <h2>Job Hunting is Broken</h2>
-            <p>Spending hours scrolling job boards, rewriting cover letters, and filling out forms? Let our AI agent do the heavy lifting — from job discovery to application submission.</p>
-        </section>
-        <section>
-            <h2>How It Works</h2>
-            <ol>
-                <li>Set Preferences – Choose your role, location, salary, and more.</li>
-                <li>Upload Your CV – Our AI learns your experience and skills.</li>
-                <li>Autopilot Mode – The agent finds jobs, tailors your application, and applies.</li>
-                <li>Track Progress – See where you’ve applied and what’s next.</li>
-            </ol>
-        </section>
-        <section>
+        <div class="hero">
+            <h1>Let AI Apply to Jobs for You</h1>
+            <p>An autonomous job search assistant that finds roles, tailors your CV, and applies — while you focus on interviews.</p>
+        </div>
+        <div class="features">
             <h2>Built for Busy Professionals</h2>
-            <ul class="features">
+            <ul>
                 <li>✅ Fully automated job applications</li>
                 <li>✅ Personalized CV and cover letter generation</li>
                 <li>✅ Multi-platform support (LinkedIn, Indeed, Wellfound)</li>
                 <li>✅ Application tracking dashboard</li>
                 <li>✅ Privacy-first: your data stays secure</li>
             </ul>
-        </section>
-        <section>
+        </div>
+        <div class="how-it-works">
+            <h2>How It Works</h2>
+            <ul>
+                <li><strong>Set Preferences</strong> – Choose your role, location, salary, and more.</li>
+                <li><strong>Upload Your CV</strong> – Our AI learns your experience and skills.</li>
+                <li><strong>Autopilot Mode</strong> – The agent finds jobs, tailors your application, and applies.</li>
+                <li><strong>Track Progress</strong> – See where you’ve applied and what’s next.</li>
+            </ul>
+        </div>
+        <div class="cta">
             <h2>Be the First to Try It</h2>
             <p>Join the waitlist and get early access + exclusive launch perks.</p>
-            <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <form action="https://formspree.io/f/xrbkpbjd" method="POST">
                 <input type="email" name="email" placeholder="Enter your email" required>
-                <button type="submit" class="cta-button">Join the Waitlist</button>
+                <button type="submit">Join the Waitlist</button>
             </form>
-        </section>
+        </div>
     </div>
+    <footer>
+        &copy; 2025 Climbr. All rights reserved.
+    </footer>
 </body>
 </html>
