@@ -1,139 +1,189 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climbr - Your AI Job Search Assistant</title>
+    <title>Ascendr - Your Agentic Job Search & Auto-Apply Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #007bff; /* A nice blue */
+            --secondary-color: #6c757d;
+            --accent-color: #28a745; /* Green for success/CTA */
+            --light-bg: #f8f9fa;
+            --dark-text: #343a40;
+            --light-text: #ffffff;
+            --border-color: #dee2e6;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #0077b6;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header img {
-            width: 150px;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px 0;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2em;
+            box-sizing: border-box;
             line-height: 1.6;
+            color: var(--dark-text);
+            background-color: var(--light-bg);
+            scroll-behavior: smooth;
         }
-        .hero {
-            text-align: center;
-            padding: 50px 0;
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        .hero h1 {
-            color: #0077b6;
-        }
-        .features, .how-it-works, .cta {
-            background-color: white;
-            padding: 40px 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .features h2, .how-it-works h2, .cta h2 {
-            color: #0077b6;
-            margin-bottom: 20px;
-        }
-        .features ul, .how-it-works ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .features li, .how-it-works li {
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-        .cta {
-            text-align: center;
-        }
-        .cta button {
-            background-color: #0077b6;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .cta button:hover {
-            background-color: #005f8a;
-        }
-        footer {
-            text-align: center;
+
+        /* Header */
+        header {
+            background-color: var(--light-text);
             padding: 20px 0;
-            background-color: #0077b6;
-            color: white;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-            }
-            h1 {
-                font-size: 2em;
-            }
-            p {
-                font-size: 1em;
-            }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-    </style>
-</head>
-<body>
-    <header>
-        <img src="climbr_logo.png" alt="Climbr Logo">
-    </header>
-    <div class="container">
-        <div class="hero">
-            <h1>Let AI Apply to Jobs for You</h1>
-            <p>An autonomous job search assistant that finds roles, tailors your CV, and applies — while you focus on interviews.</p>
-        </div>
-        <div class="features">
-            <h2>Built for Busy Professionals</h2>
-            <ul>
-                <li>✅ Fully automated job applications</li>
-                <li>✅ Personalized CV and cover letter generation</li>
-                <li>✅ Multi-platform support (LinkedIn, Indeed, Wellfound)</li>
-                <li>✅ Application tracking dashboard</li>
-                <li>✅ Privacy-first: your data stays secure</li>
-            </ul>
-        </div>
-        <div class="how-it-works">
-            <h2>How It Works</h2>
-            <ul>
-                <li><strong>Set Preferences</strong> – Choose your role, location, salary, and more.</li>
-                <li><strong>Upload Your CV</strong> – Our AI learns your experience and skills.</li>
-                <li><strong>Autopilot Mode</strong> – The agent finds jobs, tailors your application, and applies.</li>
-                <li><strong>Track Progress</strong> – See where you’ve applied and what’s next.</li>
-            </ul>
-        </div>
-        <div class="cta">
-            <h2>Be the First to Try It</h2>
-            <p>Join the waitlist and get early access + exclusive launch perks.</p>
-            <form action="https://formspree.io/f/xrbkpbjd" method="POST">
-                <input type="email" name="email" placeholder="Enter your email" required>
-                <button type="submit">Join the Waitlist</button>
-            </form>
-        </div>
-    </div>
-    <footer>
-        &copy; 2025 Climbr. All rights reserved.
-    </footer>
-</body>
-</html>
+
+        .logo {
+            /* Styling for the logo image */
+            height: 50px; /* Adjust as needed */
+            width: auto;
+            display: block; /* Ensures it behaves like a block element for margin auto if needed */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark-text);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), #0056b3);
+            color: var(--light-text);
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0 0 15px 15px; /* Subtle rounded bottom */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--light-text);
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            background-color: #218838; /* Darker green */
+            transform: translateY(-2px);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 0;
+            background-color: var(--light-text);
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        section:nth-of-type(even) {
+            background-color: var(--light-bg);
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--primary-color);
+            font-weight: 700;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Problem & Solution */
+        .problem-solution-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .problem-card, .solution-card {
+            background-color: var(--light-bg);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            flex: 1;
+            min-width: 300px;
+            max-width: 45%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .problem-card:hover, .solution-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .problem-card h3, .solution-card h3 {
+            color: var(--primary-color);
+            font-size: 1.8em;
+            margin-bottom:
